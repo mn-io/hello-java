@@ -1,7 +1,5 @@
 package day1;
 
-import static org.junit.Assert.*;
-
 public class HelloArgsTest {
 
     @org.junit.Test
