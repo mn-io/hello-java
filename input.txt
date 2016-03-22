@@ -1,0 +1,13 @@
+public static String readInput(String query) {
+	String input = "";
+	InputStreamReader isr = new InputStreamReader(System.in);
+	BufferedReader br = new BufferedReader(isr);
+	System.out.print(query);
+	
+	try {
+		input = br.readLine();
+	} catch (Exception e) {
+		input = "";
+	}
+	return input;
+}
