@@ -1,10 +1,10 @@
-public class TeilPlayground {
+public class DividePlayground {
     public static void main(String[] args) {
         int i = 1024;
-        teilLoop(i);
+        divideLoop(i);
     }
 
-    private static void teilLoop(int i) {
+    private static void divideLoop(int i) {
         boolean condition = i % 2 == 0;
         System.out.println(i);
         while(condition) {
