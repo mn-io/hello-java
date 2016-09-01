@@ -12,22 +12,16 @@ public class Calculator {
         int b = Input.readInt("b:");
 
         float result = 0;
-        switch (operator) {
-            case "+":
-                result = add(a, b);
-                break;
-            case "/":
-                result = divide(a, b);
-                break;
-            case "*":
-                break;
-            case "-":
-                break;
-            case "%":
-                break;
-            default:
-                System.out.println("kein Operator");
-                return;
+        if (operator.equals("+")) {
+            result = add(a, b);
+        } else if (operator.equals("/")) {
+            result = divide(a, b);
+        } else if (operator.equals("*")) {
+        } else if (operator.equals("-")) {
+        } else if (operator.equals("%")) {
+        } else {
+            System.out.println("kein Operator");
+            return;
         }
 
         System.out.println(a + " " + operator + " " + b + " = " + result);

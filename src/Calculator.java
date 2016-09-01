@@ -7,25 +7,20 @@ public class Calculator {
         int b = 3;
         float result = 0;
 
-        switch (operator) {
-            case '+':
-                result = add(a, b);
-                break;
-            case '-':
-                result = subtract(a, b);
-                break;
-            case '*':
-                result = multiply(a, b);
-                break;
-            case '/':
-                if (b == 0) {
-                    System.out.println("Durch 0 teilen nicht erlaubt.");
-                    return;
-                }
-                result = divide(a, b);
-                break;
+        if (operator == '+') {
+            result = add(a, b);
+        } else if (operator == '-') {
+            result = subtract(a, b);
+        } else if (operator == '*') {
+            result = multiply(a, b);
+        } else if (operator == '/') {
+            if (b == 0) {
+                System.out.println("Durch 0 teilen nicht erlaubt.");
+                return;
+            }
+            result = divide(a, b);
         }
-
+g
         System.out.println("Ergebnis: " + a + " " + operator + " " + b + " = " + result);
     }
 
