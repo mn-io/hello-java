@@ -20,7 +20,7 @@ public class Calculator {
             }
             result = divide(a, b);
         }
-g
+
         System.out.println("Ergebnis: " + a + " " + operator + " " + b + " = " + result);
     }
 
