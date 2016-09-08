@@ -19,6 +19,9 @@ public class Calculator {
                 return;
             }
             result = divide(a, b);
+        } else {
+            System.out.println("Kenn ich nicht, mach ich nicht!");
+
         }
 
         System.out.println("Ergebnis: " + a + " " + operator + " " + b + " = " + result);
@@ -33,8 +36,9 @@ public class Calculator {
         return first - second;
     }
 
-    public static int multiply(int first, int second) {
-        return first * second;
+    public static int multiply(int factorOne, int factorTwo) {
+        int result = factorOne * factorTwo;
+        return result;
     }
 
     public static float divide(float first, float second) {
