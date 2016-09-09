@@ -5,7 +5,8 @@ public class ArraySumPlayground {
         int sum = 0;
 
         for (int i = 0; i < values.length; i++) {
-            sum += values[i];
+            int eintrag = values[i];
+            sum += eintrag; // sum = sum + values[i]
         }
 
         System.out.println("Summe: " + sum);

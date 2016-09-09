@@ -7,7 +7,9 @@ public class ArrayFindPlayground {
 
         for (int i = 0; i < values.length; i++) {
             int currentValue = values[i];
-            if (biggest < currentValue) {
+            boolean istGroesser = biggest < currentValue;
+            System.out.println("Wert auf Seite " + i + " ist groesser? " + biggest + " < " + currentValue + " ## " + istGroesser);
+            if (istGroesser) {
                 biggest = currentValue;
                 position = i;
             }
