@@ -14,8 +14,12 @@ public class ArrayForPlayground {
             }
         }
 
-        String info = Arrays.toString(results);
-        System.out.println(info);
+        System.out.println("-----------------------------");
+        System.out.println("Ausgabe:");
+        for (int i = 0; i < results.length; i++) {
+            final boolean result = results[i];
+            System.out.println(result);
+        }
     }
 
 }
